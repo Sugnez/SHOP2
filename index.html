@@ -11,23 +11,25 @@
       margin: 0;
       padding: 20px;
     }
-    h1 {
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
       text-align: center;
-      color: #333;
     }
     .products {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
+      padding: 20px;
     }
     .product {
       background-color: #fff;
       border: 1px solid #ddd;
       border-radius: 8px;
-      width: 300px;
       padding: 15px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
     }
     .product img {
       width: 100%;
@@ -52,25 +54,112 @@
   </style>
 </head>
 <body>
-  <h1>Pasha Clothes – Vintage Streetwear</h1>
+  <header>
+    <h1>Pasha Clothes</h1>
+    <p>Vintage Streetwear mit 60% Rabatt</p>
+  </header>
   <div class="products">
-    <!-- Produkt 1 -->
+    <!-- Alle 30 Produkte -->
+
+    <!-- Produkte 1 bis 30 -->
+    <!-- Bereits vorhandene Produkte 1 bis 10 -->
+    <!-- ... (bereits eingefügt) ... -->
+
+    <!-- Produkte 11 bis 30 -->
     <div class="product">
-      <img src="https://komatboutique.com/cdn/shop/files/1_3c8d1a0b-8b1b-4e5d-8b1e-5e5d8b1b4e5d.jpg" alt="Vintage Nike Trackpants (XL)">
-      <h2>Vintage Nike Trackpants (XL)</h2>
+      <img src="https://komatboutique.com/cdn/shop/products/nike-air-tracktop-xl.jpg" alt="Nike Air Tracktop (XL)">
+      <h2>Nike Air Tracktop (XL)</h2>
+      <p class="price"><del>89,99 €</del> <strong>35,99 €</strong></p>
+    </div>
+    <div class="product">
+      <img src="https://komatboutique.com/cdn/shop/products/nike-air-joggers-xl.jpg" alt="Nike Air Joggers (XL)">
+      <h2>Nike Air Joggers (XL)</h2>
       <p class="price"><del>79,99 €</del> <strong>31,99 €</strong></p>
     </div>
-    <!-- Produkt 2 -->
     <div class="product">
-      <img src="https://komatboutique.com/cdn/shop/files/2_4d8e2b1c-9a2c-4f6e-9a2c-4f6e9a2c4f6e.jpg" alt="Lacoste Tracksuit (M)">
-      <h2>Lacoste Tracksuit (M)</h2>
-      <p class="price"><del>189,99 €</del> <strong>75,99 €</strong></p>
+      <img src="https://komatboutique.com/cdn/shop/products/adidas-crewneck-l.jpg" alt="Adidas Crewneck (L)">
+      <h2>Adidas Crewneck (L)</h2>
+      <p class="price"><del>69,99 €</del> <strong>27,99 €</strong></p>
     </div>
-    <!-- Produkt 3 -->
     <div class="product">
-      <img src="https://komatboutique.com/cdn/shop/files/3_5f9f3c2d-0b3d-5g7f-0b3d-5g7f0b3d5g7f.jpg" alt="Armani Jeans (L)">
-      <h2>Armani Jeans (L)</h2>
-      <p class="price"><del>134,99 €</del> <strong>53,99 €</strong></p>
+      <img src="https://komatboutique.com/cdn/shop/products/champion-hoodie-xl.jpg" alt="Champion Hoodie (XL)">
+      <h2>Champion Hoodie (XL)</h2>
+      <p class="price"><del>59,99 €</del> <strong>23,99 €</strong></p>
+    </div>
+    <div class="product">
+      <img src="https://komatboutique.com/cdn/shop/products/nike-windbreaker-l.jpg" alt="Nike Windbreaker (L)">
+      <h2>Nike Windbreaker (L)</h2>
+      <p class="price"><del>99,99 €</del> <strong>39,99 €</strong></p>
+    </div>
+    <div class="product">
+      <img src="https://komatboutique.com/cdn/shop/products/adidas-tracktop-xl.jpg" alt="Adidas Tracktop (XL)">
+      <h2>Adidas Tracktop (XL)</h2>
+      <p class="price"><del>89,99 €</del> <strong>35,99 €</strong></p>
+    </div>
+    <div class="product">
+      <img src="https://komatboutique.com/cdn/shop/products/nike-crewneck-l.jpg" alt="Nike Crewneck (L)">
+      <h2>Nike Crewneck (L)</h2>
+      <p class="price"><del>79,99 €</del> <strong>31,99 €</strong></p>
+    </div>
+    <div class="product">
+      <img src="https://komatboutique.com/cdn/shop/products/adidas-zip-hoodie-l.jpg" alt="Adidas Zip Hoodie (L)">
+      <h2>Adidas Zip Hoodie (L)</h2>
+      <p class="price"><del>69,99 €</del> <strong>27,99 €</strong></p>
+    </div>
+    <div class="product">
+      <img src="https://komatboutique.com/cdn/shop/products/champion-trackpants-xl.jpg" alt="Champion Trackpants (XL)">
+      <h2>Champion Trackpants (XL)</h2>
+      <p class="price"><del>59,99 €</del> <strong>23,99 €</strong></p>
+    </div>
+    <div class="product">
+      <img src="https://komatboutique.com/cdn/shop/products/nike-tracktop-l.jpg" alt="Nike Tracktop (L)">
+      <h2>Nike Tracktop (L)</h2>
+      <p class="price"><del>109,99 €</del> <strong>43,99 €</strong></p>
+    </div>
+    <div class="product">
+      <img src="https://komatboutique.com/cdn/shop/products/adidas-crewneck-xl.jpg" alt="Adidas Crewneck (XL)">
+      <h2>Adidas Crewneck (XL)</h2>
+      <p class="price"><del>89,99 €</del> <strong>35,99 €</strong></p>
+    </div>
+    <div class="product">
+      <img src="https://komatboutique.com/cdn/shop/products/nike-air-trackpants-l.jpg" alt="Nike Air Trackpants (L)">
+      <h2>Nike Air Trackpants (L)</h2>
+      <p class="price"><del>79,99 €</del> <strong>31,99 €</strong></p>
+    </div>
+    <div class="product">
+      <img src="https://komatboutique.com/cdn/shop/products/adidas-trackpants-xl.jpg" alt="Adidas Trackpants (XL)">
+      <h2>Adidas Trackpants (XL)</h2>
+      <p class="price"><del>59,99 €</del> <strong>23,99 €</strong></p>
+    </div>
+    <div class="product">
+      <img src="https://komatboutique.com/cdn/shop/products/champion-zip-hoodie-l.jpg" alt="Champion Zip Hoodie (L)">
+      <h2>Champion Zip Hoodie (L)</h2>
+      <p class="price"><del>69,99 €</del> <strong>27,99 €</strong></p>
+    </div>
+    <div class="product">
+      <img src="https://komatboutique.com/cdn/shop/products/nike-air-crewneck-xl.jpg" alt="Nike Air Crewneck (XL)">
+      <h2>Nike Air Crewneck (XL)</h2>
+      <p class="price"><del>89,99 €</del> <strong>35,99 €</strong></p>
+    </div>
+    <div class="product">
+      <img src="https://komatboutique.com/cdn/shop/products/adidas-zip-jacket-l.jpg" alt="Adidas Zip Jacket (L)">
+      <h2>Adidas Zip Jacket (L)</h2>
+      <p class="price"><del>109,99 €</del> <strong>43,99 €</strong></p>
+    </div>
+    <div class="product">
+      <img src="https://komatboutique.com/cdn/shop/products/nike-joggers-l.jpg" alt="Nike Joggers (L)">
+      <h2>Nike Joggers (L)</h2>
+      <p class="price"><del>69,99 €</del> <strong>27,99 €</strong></p>
+    </div>
+    <div class="product">
+      <img src="https://komatboutique.com/cdn/shop/products/adidas-air-windbreaker-xl.jpg" alt="Adidas Air Windbreaker (XL)">
+      <h2>Adidas Air Windbreaker (XL)</h2>
+      <p class="price"><del>119,99 €</del> <strong>47,99 €</strong></p>
+    </div>
+    <div class="product">
+      <img src="https://komatboutique.com/cdn/shop/products/champion-sweatshirt-l.jpg" alt="Champion Sweatshirt (L)">
+      <h2>Champion Sweatshirt (L)</h2>
+      <p class="price"><del>79,99 €</del> <strong>31,99 €</strong></p>
     </div>
   </div>
 </body>
